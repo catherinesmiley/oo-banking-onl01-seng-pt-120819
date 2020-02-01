@@ -82,10 +82,12 @@ class Transfer
   
   def execute_transaction
     if valid? || self.status = "complete"
+      
     else 
       sender.balance -= self.amount 
       receiver.balance += self.amount 
       self.status = "complete"
+    end 
   end 
   
 end 
