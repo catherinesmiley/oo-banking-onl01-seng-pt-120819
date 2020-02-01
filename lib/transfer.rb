@@ -76,4 +76,8 @@ class Transfer
     @amount = amount 
   end 
   
+  def valid?
+    sender.
+  end 
+  
 end 
